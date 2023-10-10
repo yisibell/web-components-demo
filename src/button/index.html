@@ -9,12 +9,16 @@
   </head>
   <body>
     <div id="app">
-      <my-button label="Click Me" as-atom></my-button>
+      <!-- <my-button as-atom></my-button> -->
+      <!-- <my-button label="Click Me" as-atom></my-button> -->
+      <my-button as-atom>Click Me</my-button>
+      
     </div>
 
     <script>
       document.querySelector('my-button').addEventListener('onClick', (e) => {
         console.log('click', e)
+        e.target.textContent = new Date()
       })
     </script>
   </body>

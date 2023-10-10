@@ -31,7 +31,9 @@
   </style>
 
   <div class="container">
-    <button>Label</button>
+    <button>
+      <slot>Label</slot>
+    </button>
   </div>
 `
 

@@ -86,10 +86,6 @@
       this.$button.addEventListener('onClick', this.toggleOpen.bind(this))
     }
 
-    static get observedAttributes() {
-      return ['label', 'option', 'options']
-    }
-
     get label() {
       return this.getAttribute('label')
     }
