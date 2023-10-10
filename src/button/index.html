@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Button demo</title>
+    <script defer src="./MyButton.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <my-button label="Click Me" as-atom></my-button>
+    </div>
+
+    <script>
+      document.querySelector('my-button').addEventListener('onClick', (e) => {
+        console.log('click', e)
+      })
+    </script>
+  </body>
+</html>

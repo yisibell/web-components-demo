@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Dropdown demo</title>
+
+    <script defer src="../button/MyButton.js"></script>
+    <script defer src="./MyDropdown.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <my-dropdown label="Dropdown" option="option2"></my-dropdown>
+    </div>
+
+    <script>
+      document.querySelector('my-dropdown').options = {
+        option1: { label: 'Option 1' },
+        option2: { label: 'Option 2' },
+      }
+
+      document
+        .querySelector('my-dropdown')
+        .addEventListener('onChange', (event) => console.log(event.detail))
+    </script>
+  </body>
+</html>
